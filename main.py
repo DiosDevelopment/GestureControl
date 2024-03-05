@@ -1,6 +1,6 @@
 import cv2
 import mediapipe as mp
-from math import hypotn
+from math import hypot
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
@@ -54,7 +54,7 @@ while True:
                 y = int(landmark.y * img.shape[0])
                 landmarks_list.append((x, y))
 
-            adjacency_matrix = d.create_adjacency_matrix(landmarks_list)
+            # adjacency_matrix = d.create_adjacency_matrix(landmarks_list)
 
 
             # Length between thumb and little finger
