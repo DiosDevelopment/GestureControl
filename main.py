@@ -1,6 +1,6 @@
 import cv2
 import mediapipe as mp
-from math import hypot
+from math import hypotn
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
